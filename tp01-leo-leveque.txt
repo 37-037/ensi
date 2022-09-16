@@ -1,0 +1,334 @@
+    1  cd ./Documents
+    2  cd ..
+    3  cd Documents
+    4  cd
+    5  cd ./Documents
+    6  mkdir odl
+    7  cd ./odl/
+    8  wget http://www.ecole.ensicaen.fr/~alebret/_data/ressources-fisa.tgz
+    9  tar -xf ressources-fisa.tgz
+   10  ls -h
+   11  du -h
+   12  cd tp01
+   13  mkdir ressource--bioinfo-2019
+   14  exit
+   15  mkdir ressources‐bioinfo‐2019
+   16  cd ressources‐bioinfo‐2019/
+   17  cp ../../ressources-fisa/tp01/tumor-protein-p53.txt .
+   18  ls
+   19  cp ../../ressources-fisa/tp01/cell_stem.tex 
+   20  cp ../../ressources-fisa/tp01/cell_stem.tex .
+   21  ls
+   22  man mv
+   23  mv cell_stem.tex stem_cell.tex
+   24  ls
+   25  chmod gw
+   26  man chmod 
+   27  chmod gw tumor-protein-p53.txt 
+   28  chmod g w tumor-protein-p53.txt 
+   29  chmod g+w tumor-protein-p53.txt 
+   30  ls -m
+   31  ls -l
+   32  chmod a-wx tumor-protein-p53.txt 
+   33  ls -l
+   34  chmod a-r tumor-protein-p53.txt 
+   35  ls -l
+   36  chmod a+r tumor-protein-p53.txt 
+   37  chmod u+w tumor-protein-p53.txt 
+   38  rm tumor-protein-p53.txt 
+   39  exit
+   40  cp ../ressources-fisa/tp01/rouge_et_noir.txt 
+   41  cp ../ressources-fisa/tp01/rouge_et_noir.txt .
+   42  ls
+   43  cat rouge_et_noir.txt 
+   44  more rouge_et_noir.txt 
+   45  less rouge_et_noir.txt 
+   46  exit
+   47  man ls
+   48  ls ../ressources-fisa
+   49  ls ../ressources-fisa -al
+   50  ls ../ressources-fisa/tp01 -al
+   51  ls ../ressources-fisa/tp01/knock_* -al
+   52  ls ../ressources-fisa/tp01/knock_[0-9][0-9][0-9].txt -al
+   53  cp ../ressources-fisa/tp01/knock_[0-9][0-9][0-9].txt .
+   54  ls -al
+   55  man ls
+   56  ls -al --sort=s
+   57  exit
+   58  date
+   59  date "+%d-%m-%Y"
+   60  man date
+   61  date "+%d-%m-%Y (%c)"
+   62  man date
+   63  date "+%d-%m-%Y (%h :%M :%S)"
+   64  date "+%d-%m-%Y (%H :%M :%S)"
+   65  date "+%d-%m-%Y (%H :%M :%S)" > date-du-jour.txt
+   66  ls
+   67  cat date-du-jour.txt 
+   68  date "+%d-%m-%Y (%H :%M :%S)" > date-du-jour.txt
+   69  cat date-du-jour.txt 
+   70  date "+%d-%m-%Y (%H :%M :%S)" >> date-du-jour.txt
+   71  cat date-du-jour.txt 
+   72  cat ../ressources-fisa/tp01/knock_00[1-4].txt > knok.txt 
+   73  cat knok.txt 
+   74  exit
+   75  date_perso
+   76  exit
+   77  alias date_perso='date "+%d-%m-%Y (%T)'
+   78  date_perso 
+   79  alias date_perso="date "+%d-%m-%Y (%T)"
+   80  alias date_perso=date "+%d-%m-%Y (%T)
+   81  alias date_perso=date "+%d-%m-%Y (%T)
+   82  date_perso
+   83  date "+%d-%m-%Y (%T)"="date-perso"
+   84  date "+%d-%m-%Y (%T)"="date_perso"
+   85  date_perso
+   86  alias date "+%d-%m-%Y (%T)"="date_perso"
+   87  alias date '+%d-%m-%Y (%T)'="date_perso"
+   88  alias (date "+%d-%m-%Y (%T)")="date_perso"
+   89  alias date_perso="date "+%d-%m-%Y (%T)""
+   90  alias date_perso="date '+%d-%m-%Y (%T)"'
+   91  date_perso
+   92  alias date_perso='date "+%d-%m-%Y (%T)"'
+   93  date_perso
+   94  alias date_perso="date //"+%d-%m-%Y (%T)//""
+   95  date_perso
+   96  alias date_perso="date \"+%d-%m-%Y (%T)\""
+   97  date_perso
+   98  alias date_perso="date \\"+%d-%m-%Y (%T)\\""
+   99  date_perso
+  100  alias date_perso="date \\"+%d-%m-%Y \(%T\)\\""
+  101  date_perso
+  102  alias date_perso="date \\"+%d-%m-%Y (%T)\\""
+  103  alias date_perso="date \\"+%d-%m-%Y (%T)\\""
+  104  alias date_perso="date \"+%d-%m-%Y (%T)\""
+  105  date_perso 
+  106  bash
+  107  exit
+  108  mkdir livres
+  109  cd livres/
+  110  ls ../../ressources-fisa/tp01
+  111  cp ../../ressources-fisa/tp01/*.txt .
+  112  ls
+  113  ln stendhal‐r‐et‐n.txt rouge_et_noir.txt
+  114  ln livres/rouge_et_noir.txt stendhal‐r‐et‐n.txt
+  115  ln rouge_et_noir.txt stendhal‐r‐et‐n.txt
+  116  ls -al
+  117  ls -li
+  118  cat stendhal‐r‐et‐n.txt 
+  119  ln . livre_copie
+  120  ln . ../livre_copie
+  121  ln . ../livre_copie
+  122  cd ..
+  123  ln livre livre_copie
+  124  ln livres livre_copie
+  125  ln livres livre/livre_copie
+  126  ln livres livre/livre_copie -s
+  127  ln . livre_copie -s
+  128  ls -li
+  129  derechef
+  130  rm livre_copie
+  131  cd livres/
+  132  rm stendhal‐r‐et‐n.txt 
+  133  ls 
+  134  exit
+  135  find ../ressources-fisa/rep hough.txt
+  136  find houg.txt ../ressources-fisa/rep
+  137  find ../ressources-fisa/rep "houg.txt"
+  138  find ../ressources-fisa/rep houg.txt -r
+  139  find ../ressources-fisa/rep houg.txt -print
+  140  find ../ressources-fisa/tp01/rep houg.txt -print
+  141  find ../ressources-fisa/tp01/rep loremipsum.txt -print
+  142  find ../ressources-fisa/tp01/rep -exec grep loremipsum.txt -print
+  143  find ../ressources-fisa/tp01/rep -name "loremipsum.txt" -print
+  144  find ../ressources-fisa/tp01/rep hough.txt -print
+  145  find ../ressources-fisa/tp01/rep -name hough.txt -print
+  146  find ../ressources-fisa/tp01/rep -name "loremipsum.txt" -print -size3k
+  147  find ../ressources-fisa/tp01/rep -name "loremipsum.txt" -print -size 3k
+  148  exit
+  149  cp ../ressources-fisa/tp01/rouge_et_noir.txt .
+  150  ls
+  151  grep rouge_et_noir.txt "Saint-Malo"
+  152  grep "Saint-Malo" rouge_et_noir.txt 
+  153  cp ../ressources-fisa/tp01/chateaubriand-memoires-outre-tombe.txt .
+  154  grep "Saint-Malo" chateaubriand-memoires-outre-tombe.txt 
+  155  grep "Combourg" chateaubriand-memoires-outre-tombe.txt 
+  156  head chateaubriand-memoires-outre-tombe.txt  10
+  157  head 10 chateaubriand-memoires-outre-tombe.txt
+  158  head -10 chateaubriand-memoires-outre-tombe.txt 
+  159  head -n10 chateaubriand-memoires-outre-tombe.txt 
+  160  tail -n15 chateaubriand-memoires-outre-tombe.txt 
+  161  wc -w -l chateaubriand-memoires-outre-tombe.txt 
+  162  exit
+  163  ls | wc -l
+  164  tail -n27 chateaubriand-memoires-outre-tombe.txt | head -n1 
+  165  tail -n27 rouge_et_noir.txt | head -n1 
+  166  tail -n27 rouge_et_noir.txt | head -n1 | wc -l
+  167  grep "Julien" rouge_et_noir.txt | tail -n1
+  168  exit
+  169  cp ../ressources-fisa/tp01/sales2009.csv .
+  170  cat sales2009.csv 
+  171  head -3 sales2009.csv 
+  172  cat sales2009.csv | cut -d -f Name
+  173  cat sales2009.csv | cut -d -f4
+  174  cat sales2009.csv | cut -d; -f4
+  175  cat sales2009.csv | cut -d -f4
+  176  cat sales2009.csv | cut -d, -f4
+  177  cat sales2009.csv | cut -d, -f4 -f5
+  178  cat sales2009.csv | cut -d, -f4,5
+  179  head -3 sales2009.csv 
+  180  cat sales2009.csv | cut -d, -f3,5
+  181  cat sales2009.csv | cut -d, -f3,5 > result.txt
+  182  cat result.txt 
+  183  cat result.txt | grep | ws -l
+  184  cat result.txt | sort | ws -l
+  185  cat result.txt | sort | wc -l
+  186  man sort
+  187  man uniq
+  188  cat result.txt | uniq
+  189  man uniq
+  190  cat result.txt | cut -d,-f2 | uniq -c
+  191  cat result.txt | cut -d, -f1 | uniq -c
+  192  cat result.txt | cut -d, -f1 | uniq -c | sort
+  193  cat result.txt | uniq -c | wc -nr
+  194  cat result.txt | uniq -c 
+  195  cat result.txt | uniq -c | cut -d, -f1
+  196  cat result.txt | uniq -c | cut -d, -f2
+  197  cat result.txt | cut -d, -f2 | uniq -c
+  198  cat result.txt | cut -d, -f2 | uniq -c | sort
+  199  cat result.txt | cut -d, -f2 | uniq -c | sort -B
+  200  cat result.txt | cut -d, -f2 | uniq -c | sort
+  201  cat result.txt | cut -d, -f2 | uniq -c 
+  202  cat result.txt | cut -d, -f2 | uniq -c | sort
+  203  cat result.txt | cut -d, -f2 | uniq -c 
+  204  cat sales2009.csv | cut -d, -f3,5 > result.txt
+  205  cat result.txt | cut -d, -f2 | uniq -c | sort
+  206  cat result.txt | cut -d, -f2 | uniq | sort
+  207  cat result.txt | cut -d, -f2 | uniq | sort
+  208  cat result.txt | cut -d, -f2 | uniq -c | sort
+  209  man uniq
+  210  cat result.txt | cut -d, -f2 | uniq -cd | sort
+  211  man uniq
+  212  exit
+  213  vim
+  214  & vim
+  215  &vim
+  216  vim &
+  217  kill 7432 
+  218  man man
+  219  man 3 printf
+  220  printf "\t%s\n" "Bienvenue à l'ENSICAEN !"
+  221  echo -e "\tBienvenue à l'ENSICAEN !"
+  222   asciinema rec tp01-leo-leveque-ex2.cast -i=3
+  223   asciinema rec tp01-leo-leveque-ex3.cast -i=3
+  224  cd Documents/
+  225  ls
+  226  cd odl/
+  227  cd tp01/
+  228  ls
+  229   asciinema rec tp01-leo-leveque-ex3.cast -i=3
+  230   asciinema rec tp01-leo-leveque-ex4.cast -i=3
+  231   asciinema rec tp01-leo-leveque-ex5.cast -i=3
+  232   asciinema rec tp01-leo-leveque-ex6.cast -i=3
+  233   asciinema rec tp01-leo-leveque-ex7.cast -i=3
+  234   asciinema rec tp01-leo-leveque-ex9.cast -i=3
+  235   asciinema rec tp01-leo-leveque-ex10.cast -i=3
+  236   asciinema rec tp01-leo-leveque-ex11.cast -i=3
+  237   asciinema rec tp01-leo-leveque-ex12..cast -i=3
+  238  cp ../ressources-fisa/tp01/sales2009.csv .
+  239  cat sales2009.csv | cut -d -f3,5 > result.txt
+  240  cat sales2009.csv | cut -d, -f3,5 > result.txt
+  241  head result.txt 
+  242  cat result.txt | cut -d, -f2 | sort | uniq -c
+  243  cat result.txt | cut -d, -f2 | sort | uniq -c | sort | head n-1
+  244  cat result.txt | cut -d, -f2 | sort | uniq -c | sort 
+  245  man sort
+  246  cat result.txt | cut -d, -f2 | sort | uniq -c | sort -c
+  247  man sort
+  248  cat result.txt | cut -d, -f2 | sort | uniq -c | sort -n
+  249  cat result.txt | cut -d, -f2 | sort | uniq -c | sort -n | tail n-1
+  250  cat result.txt | cut -d, -f2 | sort | uniq -c | sort -n > result2.txt
+  251  tail -n result2.txt 
+  252  tail -n1 result2.txt 
+  253  head sales2009.csv 
+  254  cat sales2009.csv | cut -d, -f4 > result3.txt
+  255  cat result3.txt | sort | uniq -c | sort -n > result4.txt
+  256  tail -n1 result4.txt 
+  257  exit
+  258  cp ../ressources-fisa/tp01/zweig-marie-stuart-[1-2].txt .
+  259  ls
+  260  diif zweig-marie-stuart-1.txt zweig-marie-stuart-2.txt 
+  261  diff zweig-marie-stuart-1.txt zweig-marie-stuart-2.txt 
+  262  man diff
+  263  diff zweig-marie-stuart-1.txt zweig-marie-stuart-2.txt -y
+  264  man diff
+  265  diff zweig-marie-stuart-1.txt zweig-marie-stuart-2.txt -y --suppress-blank-empty 
+  266  man diff
+  267  diff zweig-marie-stuart-1.txt zweig-marie-stuart-2.txt -y --suppress-blank-empty  --suppress-common-lines 
+  268  exit
+  269  echo $PS1
+  270  $PS1 = \u@\:\w\>
+  271  PS1 = \u@\:\w\>
+  272  env PS1 = \u@\:\w\>
+  273  env $PS1 = \u@\:\w\>
+  274  PS1=\u@\:\w\>
+  275  PS1="\u@\:\w\>"
+  276  PS1="> "
+  277  PS1="[\w]\n\u@->"
+  278  PS1="[\w]\n\u->"
+  279  PS1="[\033\w\033]\n\041\u\041->"
+  280  PS1="[\w]\n\u->"
+  281  PS1="[\33\w\33]\n\41\u\41->"
+  282  PS1="[\033\w\]\n\041\u\->"
+  283  PS1="[\033\w\]\n\041\u\041->"
+  284  PS1="[\033\w\033]\n\041\u\041->"
+  285  PS1="[\033\w\033]\n\041\u\041->"
+  286  PS1="[\w]\n\u->"
+  287  PS1="\e[5[\w]\n\u->\e[m"
+  288  PS1="\e[5[\w]\n\u->\e[m"
+  289  PS1="\e[5[\w]\n\u-> \e[m"
+  290  PS1="\e[5m[\w]\n\u-> \e[m"
+  291  PS1="\e[0;5m[\w]\n\u-> \e[m"
+  292  PS1="\e[0;31m[\w]\n\u-> \e[m"
+  293  PS1="\e[0;32m[\w] \e[m \e[0;31m\n\u-> \e[m"
+  294  exit
+  295  exit
+  296  C-b $tp01
+  297  $tp01
+  298  $TP01
+  299  ssh lleveque@cybele.ecole.ensicaen.fr
+  300  exit
+  301  curl http:wttr.in
+  302  curl http://wttr.in
+  303  exit
+  304  top
+  305  exit
+  306  tmux
+  307  exit
+  308  which printf
+  309  whereis printf
+  310  cat /usr/bin/printf
+  311  whereis mkdir vim
+  312  whereis mkdir vim firefox
+  313  whereis mkdir vim firefox
+  314  which mkdir vim firefox
+  315  exit
+  316  cp .bash_history .
+  317  cp bash_history .
+  318  history
+  319  cp bash_history .
+  320  man history 
+  321  exit
+  322  history
+  323  cp ~/.bash_history  .
+  324  exit
+  325  cp ~/.bash_history .
+  326  ls
+  327  history -d 12
+  328  history 
+  329  undo
+  330  ~/.bash_history=.bash_history
+  331  ls -al
+  332  cp .bash_history ��~
+  333  history 
+  334  history > tp01-leo-leveque.txt
